@@ -1,0 +1,26 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+#search {
+	position: relative;
+}
+
+#popup {
+	background-color: #FFFFFF;
+    left: 1px;
+    position: absolute;
+    top: 25px;
+    padding: 5px;
+    width: 206px;
+    border: 1px solid #000000;
+    border-top: none;
+    display: none;
+}
+
+#popup p.search-link:hover {
+	background-color: #000099;
+	color: #ffffff;
+}
