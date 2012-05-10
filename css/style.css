@@ -13,14 +13,18 @@
     left: 1px;
     position: absolute;
     top: 25px;
-    padding: 5px;
     width: 206px;
     border: 1px solid #000000;
     border-top: none;
     display: none;
 }
 
-#popup p.search-link:hover {
+#popup p {
+	padding: 5px;
+	margin: 0;
+}
+
+#popup p.search-hovered {
 	background-color: #000099;
 	color: #ffffff;
 }
