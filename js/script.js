@@ -1,4 +1,11 @@
 (function($) {
+	
+	$("#search-field").keydown(function(event) {
+		if((event.which == 38 || event.which == 40) && !$('#popup').is(':hidden') && $('#popup').has('p.search-link').length != 0) {
+			
+		}
+	});
+	
 	last_term = '';
 	$("#search-field").keyup(function() {
 		//check if the current term is the same as the last
@@ -25,14 +32,21 @@
 		}
 	});
 	
-	("#search-field").keydown(function() {
-		
-	});
 	
 	$(".search-link").live("click", function(event) {
 		$("#search-field").val($(this).html());
 		$("#popup").hide();
 	});
 	
+	$(".search-link").live({
+		mouseenter:
+		function() {
+			$(this).addClass("search-hovered");
+		},
+		mouseleave:
+		function() {
+			$(this).removeClass("search-hovered");
+		}
+	});
 	
 })(jQuery);
